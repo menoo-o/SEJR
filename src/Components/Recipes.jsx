@@ -17,7 +17,7 @@ const Recipes = () => {
       link: '#',
     },
     {
-      imgSrc: '/recipes/03.webp',
+      imgSrc: '/recipes/03.jpg',
       title: 'How to Choose Jewelry for Sensitive Skin',
       link: '#',
     },
