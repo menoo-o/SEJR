@@ -1,0 +1,13 @@
+.nav-links a {
+    color: #ffffff; /* Default link color */
+    padding: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: rgb(206, 231, 164); /* Hover color */
+  }
+  
+
+  

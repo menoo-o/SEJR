@@ -1,0 +1,1103 @@
+
+.app-container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer{
+  margin-top: auto;
+  padding: 25px 0;
+}
+
+
+  nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #d5dfbb;
+    height: 128px;
+    width: 100%;
+  }
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    margin-bottom: 0 !important;
+  }
+
+  .bars{
+    display: none;
+  }
+
+  .logo img {
+    margin: 0 ;
+    padding: 0 ;
+    width: 130px;
+    height: 123px;
+    
+    display: block;
+    
+  }
+  
+  .nav-links, .search {
+    display: flex;
+    gap: 40px;
+    
+  }
+  
+  .nav-links a, .search a {
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    color:rgb(80, 99, 56) !important;
+    font-weight: 700;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    background-color: rgba(80, 99, 56, 0.281);
+    border-radius: 20px;
+  }
+  
+/* mini nav */
+.mini-nav {
+    margin-top: 0 !important;
+    background-color: #dae7c8;
+    padding: 10px 20px 10px 20px;
+    height: 45px;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .icon-text{
+  font-size: 0.9em;
+  
+}
+.icons-links{
+    font-size: 1.05em;
+    margin-right: 12px;
+  }
+
+.main__container{
+  display: none;
+}
+  /* navbar ends */
+
+
+  /* HERO */
+
+  .hero-carousel {
+    margin-top: 45px; /* Adjust the value as necessary */
+    position: relative;
+    display: flex;
+    width: 100% !important;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 720px; /* Ensure the hero section matches the image height */
+}
+
+.hero-img {
+    width: 1690px;
+    height: 750px;
+    object-fit: cover;
+}
+
+.carousel-text {
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  transform: translateY(-50%);
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.2); /* Add some text shadow for better readability */
+  max-width: 45%; /* Adjust as needed */
+}
+
+.carousel-text h2 {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* WELCOME TEXT*/
+.welcom{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.para{
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.para-heading, .heading-sale-items h1{
+  font-size: 2.5rem;
+  letter-spacing: 0.1pc;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(74, 104, 56);
+}
+.para p{
+  padding: 10px;
+  padding-top: 5px;
+  font-size: 1.3em;
+  margin-bottom: 0px;
+  text-align: center;
+  color: rgb(122, 145, 109);
+  
+}
+/* check this btn>? where it is at? */
+.shop-all{
+  border: none;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  text-transform: uppercase;
+  font-weight: 380;
+  color: #728f4d !important;
+  font-size: 1.2em;
+  padding: 3px 5px;
+}
+
+.headingList{
+  margin-top: 0px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+}
+.headingList h3 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: rgb(74, 104, 56);
+  font-weight: 380;
+}
+
+/* CATEGORIES */
+.categories{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 350px); /* Four columns */
+  grid-template-rows: 320px 320px; /* One row with specific height */
+  gap: 70px; /* Adjust the gap between grid items */
+  margin-bottom: 10px ;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 100%; /* Ensures each container fills the grid cell */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container */
+  border-radius: 10px;
+}
+
+.image-container div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+.image-container div p {
+  margin: 0;
+  font-size: 1.2rem; /* Adjust the font size as necessary */
+  font-weight: 420;
+}
+
+/* NEW Arrivals */
+.heading-items, .recipes-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.heading-items h1, .recipes-heading h1{
+  font-size: 3rem;
+  font-weight: 380;
+  color: rgb(74, 104, 56);
+}
+
+.shop-view{
+  border: none;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  text-transform: uppercase;
+  font-weight: 380;
+  color: #a7db77;
+  font-size: 1.2em;
+  padding: 3px 5px;
+}
+
+.new-arrivals-carousel {
+  margin: 40px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.new-arrival-item {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.new-arrival-item img {
+  width: 300px;
+  height: 280px; /* Adjust as necessary */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.new-arrival-item h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.new-arrival-item p {
+  font-size: 1.25rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+
+.add-to-cart-btn {
+  display: inline-block;
+  background-color: #c4df98;
+  color: white;
+  border: none;
+  padding: 8px 48px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem; /* Adjust as necessary */
+  transition: background-color 0.3s;
+  font-family: inherit;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #74c071;
+}
+
+/* recipie section */
+.recipes, .blog-container{
+  margin-top: 0px;
+  width: 100%;
+  height: 600px;
+}
+
+.recipe-container, .read{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 450px);
+  grid-template-rows: 1fr;
+}
+
+.recipe-descrp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.article, .blog{
+  width: 420px;
+  height: 550px;
+}
+
+.article img{
+  width: 100%;
+  height: 450px;
+  background-color: rgb(48, 112, 51);
+}
+
+.recipe-title{
+  font-size: 1.1em;
+  font-weight: 420;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.recipe-link{
+  text-decoration: none;
+  font-size: 0.9em;
+  color: #63c063;
+  text-transform: lowercase;
+  border: 1px solid rgb(160, 230, 146);
+  padding: 7px 15px;
+}
+
+
+/* FOOTER */
+
+
+.footer-container {
+  background-color: #354630;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(4, 450px);
+  grid-template-rows: 1fr;
+  border-bottom: 1px solid #695e74;  
+}
+
+.footer-section {
+  margin: 0 20px;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: filter 0.7s;
+}
+
+.footer-section ul li a:hover {
+  filter: brightness(1.5);
+  color: #a4db77; /* Orangey highlight color */
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5em;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #badf98; /* Orangey highlight color */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2.2rem;
+  font-size: 0.9em;
+  margin-bottom: 0;
+}
+/* footer back to top btn */
+.back-to-top-btn {
+  position: fixed;
+  font-size: 1.5em;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 18px;
+  background-color: #f7f7f7; /* Customize the color */
+  color: #231f27;
+  border: none;
+  border-radius: 55%;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.back-to-top-btn:hover {
+  background-color: #5b7a47; /* Darker color on hover */
+}
+
+
+
+
+/* PAGE ABOUT CSS */
+/* General Reset and Styling */
+.about-container {
+  margin-top: 3.47rem;
+  padding: 0;
+  background-color: #f5f5f5;
+  line-height: 1.6;
+  border-bottom: none;
+
+}
+
+/* Container Styles */
+.about-heading,
+.who-are-we,
+.about-para {
+  border-bottom: none;
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(116, 68, 6, 0.1);
+}
+
+/* Header Styles */
+.about-heading h1 {
+  font-size: 2rem;
+  color: #afe41f;
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+  text-align: center;
+  border-bottom: none;
+}
+
+.who-are-we h2,
+.about-para h2 {
+  font-size: 1.45rem;
+  color: #97e761;
+  font-weight: 600;
+  border-bottom: 1px solid #64811f;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* Paragraph Styles */
+.who-are-we p,
+.about-para p {
+  font-size: 1rem;
+  border-bottom: none;
+  color: #666666;
+  margin-bottom: 10px;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.about-para span{
+  font-weight: bolder;
+}
+
+/* Additional Styling */
+.about-para {
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.btn-explore {
+  color: #666666;
+  font-weight: 600;
+  text-decoration: none;
+  transition: filter 300ms;
+}
+
+.btn-explore:hover{
+  color: #3bce01;
+  filter: brightness(1.5);
+}
+
+
+
+/* .................MEDIA QUERIES................ */
+
+  /* nav media queries & Hero*/
+  @media (min-width: 330px) and (max-width: 480px) {
+    .logo img {
+      margin: 0 ;
+      padding-right: 30px ;
+      width: 140px;
+      height: 111px;
+    }
+    .nav-links {
+      display: none;
+    }
+    .nav-bar{
+      width: 100%;
+      /* padding: 0 0.3em 0 0.7em; */
+      padding: 0 1em 0 1em;
+      flex-direction: row-reverse;
+    }
+    .bars{
+      display: block;
+    }
+    .btn-bars{
+      border: none;
+      background-color: transparent;
+    }
+    .bars-icon{
+      color: #536651;
+      font-size: 1.2em;
+
+    }
+    .search{
+      gap: 20px;
+      font-size: 1.1em;
+    }
+    .fa-user{
+      display: none;
+    }
+    
+    .mini-nav{
+      display: none;
+    }
+
+    .enable-animation{
+      margin-block: 1.2rem;
+  }  
+  
+  .main__container {
+    display: block;
+    position: relative;
+  }
+  
+  /* Marquee styles */
+  .marquee {
+    --gap: 1rem;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    border:none;
+    background-color: #a4c27f;
+  }
+  
+  .marquee__content {
+    flex-shrink: 0;
+    display: flex;
+    gap: var(--gap);
+    min-width: 100%;
+  }
+  
+  .marquee__content > * {
+    flex: 0 0 auto;
+    color: rgb(247, 246, 246);
+    background: transparent;
+    margin: 0px;
+    padding: 0.2em;
+    text-align: center;
+  }
+
+  .marquee__item{
+    padding: 3px 10px;
+  }
+  
+  ul { padding-left: 0; }
+  
+  
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(-100% - var(--gap))); }
+  }
+  
+  /* Enable animation */
+  .enable-animation .marquee__content {
+    animation: scroll 10s linear infinite;
+  }
+
+  /* HERO MEDIA QUERIES */
+  .hero-carousel {
+    margin-top: 00px; /* Adjust the value as necessary */
+    height: 460px; /* Ensure the hero section matches the image height */
+}
+
+.hero-img {
+   width: 470px;
+    height: 440px;
+}
+  .carousel-text{
+    top: 40%;
+    left: 5%;
+  }
+  .carousel-text h2 {
+    font-size: 1.8em;
+    text-align: left;
+    width: 290px;
+  }
+
+  /* Welcome Text queries */
+  .welcom{
+    height: 350px;
+    text-align: center;
+  }
+
+  .para{
+    width: 100%;
+  }
+
+  .para-heading{
+    font-size: 1.8rem;
+  }
+
+  .para p{
+    font-size: 0.95em;
+  }
+
+  .headingList h3{
+    font-size: 2rem;
+  }
+
+  /* categories */
+  .categories{
+    padding: 5px 15px;
+  }
+  
+  .list {
+    grid-template-columns: repeat(1, 280px); /* Four columns */
+    grid-template-rows: repeat(3, 250px); /* Two rows with specific height */
+    gap: 25px; /* Adjust the gap between grid items */
+    margin-bottom: 5px ;
+  }
+  
+  .image-container div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .image-container div p {
+    margin: 0;
+    font-size: 1rem; /* Adjust the font size as necessary */
+    font-weight: 420;
+  }
+
+  /* new arrivals */
+  .new-arrivals-carousel {
+    margin: 20px 0;
+  }
+
+  .heading-items{
+    margin-top: 50px;
+  }
+  .heading-items h1, .recipes-heading h1{
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .shop-view{
+    font-size: 0.95em;
+  }
+  
+  .new-arrival-item img {
+    width: 175px;
+    height: 210px; /* Adjust as necessary */}
+
+  .new-arrival-item h3 {
+      font-size: 1em;
+      font-weight: 420;
+    }
+    
+  .new-arrival-item p {
+      font-size: 1.1em;
+    }
+    
+    .add-to-cart-btn {
+      padding: 4px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem; /* Adjust as necessary */
+      
+    }
+
+    /* recipes */
+    .recipes, .blog-container{
+      height: auto ;
+      margin-bottom: 3rem;
+      
+    }
+    .recipe-container, .read{
+      grid-template-columns: repeat(1, 380px);
+      grid-template-rows: 1fr 1fr 1fr; 
+    }
+    .article, .blog{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 380px;
+      height: 420px;
+  
+    }
+    .article img{
+      width: 335px;
+      height: 310px;
+    }
+    .recipe-title{
+      font-size: 0.95em;
+      margin-top: 10px;
+      margin-bottom: 12px;
+    }
+    
+    .recipe-link{
+      text-decoration: none;
+      font-size: 0.8em;
+      padding: 5px 9px;
+    }
+
+    /* subscribe-container */
+    .subscribe-container{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    /* footer */  
+    .app-container{
+      display: flex;
+      flex-direction: column;
+      min-height: 100dvh;
+    }
+
+    .footer-container{
+      margin-top: auto;
+    }
+
+    .footer-container {
+      padding: 15px 2px;
+    }
+    .footer-top {
+      padding-bottom: 10px;
+    }
+    
+    .footer-section {
+      margin: 0 20px;
+      min-width: 180px;
+    }
+
+      .footer-section h3 {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      }
+    
+    .footer-section ul li {
+      margin-bottom: 10px;
+    }
+    .social-icons {
+      gap: 20px;
+    }
+    .social-icons a {
+      font-size: 1.3em;
+    }
+
+    .footer-bottom {
+      margin-top: 15px;
+      font-size: 0.9em;
+    }
+
+    .footer-container {
+      margin-top: auto; /* This pushes the footer to the bottom */
+    }
+
+    .footer-top {
+      grid-template-columns: repeat(2, 180px);
+      gap:12px;
+      grid-template-rows: 220px 80px;
+      border-bottom: 1px solid #9077db;  
+      padding: 5px;
+      font-size: 0.92em;
+    }
+
+    .foot-about{
+      display: none;
+    }
+
+    /* about pg */
+    .about-container {
+      margin-top: 1rem;
+    }
+    .about-heading h1 {
+      margin-top: 15px;
+      margin-bottom: 0px;
+      width: 100%;
+      font-size: 1.30rem;
+    }
+  
+    .who-are-we h2,
+    .about-para h2 {
+      font-size: 1.2rem;
+    }
+  
+    .who-are-we p,
+    .about-para p {
+      font-size: 0.90rem;
+    }
+
+    /* blogs/recipes page */
+    .blog-grid{
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blog-title{
+      text-align: left;
+    }
+
+    .blogs-container{
+      margin-top: 2.5rem;
+    }
+
+    .blogs-heading h2 {
+      font-size: 1.65rem;
+    }
+
+    /* contact  */
+
+    .contact-container{
+      width: 85%;
+      padding: 10px;
+      margin-top: 2rem;
+    }
+
+    .contact-heading{
+      font-size: 1.65rem;
+    }
+
+    .contact-form{
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .form-input, .form-textarea {
+      font-size: 0.85em; /* Smaller font size for inputs */
+    }
+
+    .form-row{
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .form-group{
+      width: 95%;
+    }
+
+    /* back to top btn */
+    .back-to-top-btn {
+      font-size: 1.6em;
+      padding: 7px 15px;
+    }
+
+    /* Shop pg */
+    .shoppg-container {
+      display: flex; /* Use flexbox for mobile */
+      flex-direction: column; /* Stack elements vertically */
+      padding: 10px; /* Reduce padding for smaller screens */
+      margin: 10px; /* Reduce margin for smaller screens */
+    }
+  
+    .left-block-shoppg {
+      display: flex; /* Flexbox for alignment */
+      flex-direction: row !important; /* Align filter and sort in a row */
+      justify-content: space-between; /* Space between filter and sort options */
+      width: 100%; /* Full width on mobile */
+      margin-bottom: 20px; /* Add space below filter/sort */
+    }
+  
+    .Shop-Container {
+      display: grid !important; /* Use grid layout for product cards */
+      grid-template-columns: 1fr !important; /* 2 columns for product cards on mobile */
+      justify-self: center ;
+      gap: 0px; /* Gap between product cards */
+      width: 100%; /* Full width on mobile */
+    }
+  
+    .product-card {
+      width: 65% !important; /* Full width of grid column */
+      max-width: none; /* Remove max-width constraint */
+      margin: 35px; /* Remove margin */
+      height: 430px !important;
+    }
+  
+    .product-card img {
+      width: 100%; /* Full width of card */
+      height: 50%; /* Maintain aspect ratio */
+    }
+
+    .left-block-shoppg {
+     display: flex;
+      flex-direction: row; /* Change to horizontal layout for mobile */
+      justify-content: space-evenly; /* Space out filter and sort components */
+      align-items: center; /* Align items in the center vertically */
+      gap: 10px; /* Reduce the gap on mobile */
+      padding: 10px; /* Adjust padding for mobile view */
+    }
+  
+    .left-block-shoppg h3 {
+      margin: 0; /* Remove margin for headings to save space */
+      font-size: 0.9em; /* Adjust font size for better mobile fit */
+      padding: 0;
+    }
+  
+    .left-block-shoppg select {
+      width: auto; /* Adjust width to fit content */
+      font-size: 0.9em; /* Adjust font size for mobile view */
+      margin-top: 15px;
+    }
+ 
+  }
+  
+
+
+  
+    /* Media Query for Tablets Ipads portrait mode */
+  @media (min-width: 768px) and (max-width: 1024px){
+    .logo img {
+      margin: 0 ;
+      padding-right: 30px ;
+      width: 170px;
+      height: 131px;
+    }
+    .nav-links {
+      display: none;
+    }
+    .nav-bar{
+      width: 100%;
+      /* padding: 0 0.3em 0 0.7em; */
+      padding: 0 0.35em 0 1em;
+      flex-direction: row-reverse;
+    }
+    .bars{
+      display: block;
+    }
+    .btn-bars{
+      border: none;
+      background-color: transparent;
+    }
+    .bars-icon{
+      color: #332e3b;
+      font-size: 1.2em;
+    }
+    .search{
+      gap: 20px;
+      font-size: 1.1em;
+    }
+    .fa-user{
+      display: none;
+    }
+    
+    .mini-nav{
+      display: none;
+    }
+
+    .enable-animation{
+      margin-block: 1.2rem;
+  }  
+  
+  .main__container {
+    display: block;
+    position: relative;
+  }
+  
+  /* Marquee styles */
+  .marquee {
+    --gap: 1rem;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    margin: 22px 0;
+    border:none;
+    background-color: #b198df;
+  }
+  
+  .marquee__content {
+    flex-shrink: 0;
+    display: flex;
+    gap: var(--gap);
+    min-width: 100%;
+  }
+  
+  .marquee__content > * {
+    flex: 0 0 auto;
+    color: rgb(247, 246, 246);
+    background: transparent;
+    margin: 0px;
+    padding: 0.2em;
+    text-align: center;
+  }
+
+  .marquee__item{
+    padding: 3px 10px;
+  }
+  
+  ul { padding-left: 0; }
+  
+  
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(-100% - var(--gap))); }
+  }
+  
+  /* Enable animation */
+  .enable-animation .marquee__content {
+    animation: scroll 10s linear infinite;
+  }
+
+  /* HERO MEDIA QUERIES */
+  .hero-carousel {
+    margin-top: 00px; /* Adjust the value as necessary */
+    height: 460px; /* Ensure the hero section matches the image height */
+}
+
+.hero-img {
+   width: 410px;
+    height: 410px;
+}
+  .carousel-text{
+    top: 40%;
+    left: 5%;
+  }
+  .carousel-text h2 {
+    font-size: 1.8em;
+    text-align: left;
+    width: 290px;
+  }
+
+    /*Hero Img  */
+    .hero-img {
+       width: 1024px;
+       height: 700px;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
